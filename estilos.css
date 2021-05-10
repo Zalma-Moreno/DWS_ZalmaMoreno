@@ -1,53 +1,60 @@
- /* Style the body */
-        body {
-            font-family: Arial;
-            margin: 3;
-        }
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:darkslategray;
+    font-family: Arial;
+}
+.contenedor{
+    width:1000px;
+    max-width:1000px;
+    margin:0 auto;
+    overflow: hidden;
+}
+header{
+    background:darkkhaki;
+    margin:20px 0;
+}
+.main{
+    width:70%;
+    background:firebrick;
+    padding:20px;
+    float:left;
+    box-sizing:border-box;
+}
 
-        /* Header/logo Title */
-        header {
-            padding: 30px;
-            text-align: center;
-            background: #abe9dd;
-            color: rgb(194, 139, 187);
-        }
+aside{
+    width:30%;
+    padding:20px;
+    box-sizing:border-box;
+    background:coral;
+    float:left;
+}
 
-        /* Style the top navigation bar */
-        nav {
-            color: blanchedalmond;
-            background-color:cornflowerblue;
-        }
-
-        /* contenedor de columnas o principal */
-        .contenedor {
-            content: "";
-            display: block;
-            clear: both;
-        }
-
-        /* crea dos columnas que se situan una al lado de la otra  */
-        /* Sidebar/left column */
-        aside {
-            float: left;
-            flex: 30%;
-            background-color: #f1f1f1;
-            display:  block;
-            
-        }
-
-        /* Main column */
-        .main {
-            flex: left;
-            background-color: white;
-            padding: 30px;
-            width:90% ;
-            text-align: center;
-        }
-
-
-        /* Footer */
-        footer {
-            padding: 20px;
-            text-align: center;
-            background: #1abc9c;
-        }
+footer{
+    clear:both;
+    float: left;
+margin-top:20px;
+box-sizing:border-box;
+width:100%;
+padding:20px;
+color:aqua;
+background:blueviolet;
+}
+@media screen and (max-width:800px){
+    main{
+        background:darkcyan;
+    }
+    aside{
+        width:100%;
+    }
+@media screen and (max-width:800px){
+    .conteiner{
+        width:100%;
+    }
+    aside{
+        display:none;
+    }
+}
+}
